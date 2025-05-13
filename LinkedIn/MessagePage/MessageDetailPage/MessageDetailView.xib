@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageDetailViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="messageDetailTableView" destination="oRA-8g-eV2" id="Vpn-iB-1JP"/>
+                <outlet property="textMessage" destination="FTG-Fv-Hfo" id="zfw-2e-PIe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Hq7-rD-Pv5"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="oRA-8g-eV2">
+                    <rect key="frame" x="0.0" y="140" width="393" height="608"/>
+                    <color key="backgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="393" id="KbF-kb-rh0"/>
+                        <constraint firstAttribute="height" constant="608" id="W5Y-Z8-Mv6"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YtA-ek-U1e">
+                    <rect key="frame" x="16" y="777" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="7fe-GL-0w7"/>
+                        <constraint firstAttribute="height" constant="25" id="fY5-4y-Rvf"/>
+                    </constraints>
+                    <color key="tintColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="paperclip" catalog="system" symbolScale="large"/>
+                    </buttonConfiguration>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Write a message..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FTG-Fv-Hfo">
+                    <rect key="frame" x="49" y="772" width="295" height="35"/>
+                    <color key="backgroundColor" red="0.35319998835555566" green="0.35319998835555566" blue="0.35319998835555566" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="EO5-lQ-uEx"/>
+                        <constraint firstAttribute="width" constant="295" id="EdN-wY-nCj"/>
+                    </constraints>
+                    <color key="textColor" red="0.74627132669999996" green="0.74627132669999996" blue="0.74627132669999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmL-JJ-sCE">
+                    <rect key="frame" x="352" y="777" width="25" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="D1P-hA-X81"/>
+                        <constraint firstAttribute="width" constant="25" id="eaL-eM-GEH"/>
+                    </constraints>
+                    <color key="tintColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <imageReference key="image" image="microphone.fill" catalog="system" symbolScale="large"/>
+                    </buttonConfiguration>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uo1-hO-KEY">
+                    <rect key="frame" x="0.0" y="758" width="393" height="1"/>
+                    <color key="backgroundColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="KpU-31-mTT"/>
+                        <constraint firstAttribute="width" constant="393" id="sLd-OS-ULp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.16078431372549018" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="vmL-JJ-sCE" secondAttribute="trailing" constant="16" id="3S9-Sp-Bmq"/>
+                <constraint firstItem="vmL-JJ-sCE" firstAttribute="leading" secondItem="FTG-Fv-Hfo" secondAttribute="trailing" constant="8" symbolic="YES" id="6xP-aA-rqM"/>
+                <constraint firstItem="oRA-8g-eV2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="7UU-cp-y7Q"/>
+                <constraint firstItem="oRA-8g-eV2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ffx-yH-LlM"/>
+                <constraint firstAttribute="trailing" secondItem="uo1-hO-KEY" secondAttribute="trailing" id="IrL-b0-u8Z"/>
+                <constraint firstAttribute="bottom" secondItem="FTG-Fv-Hfo" secondAttribute="bottom" constant="45" id="Lwc-cr-KyZ"/>
+                <constraint firstItem="FTG-Fv-Hfo" firstAttribute="leading" secondItem="YtA-ek-U1e" secondAttribute="trailing" constant="8" symbolic="YES" id="NbW-LX-STi"/>
+                <constraint firstAttribute="bottom" secondItem="YtA-ek-U1e" secondAttribute="bottom" constant="50" id="QSB-Bf-RqP"/>
+                <constraint firstItem="oRA-8g-eV2" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="WsS-xt-EfS"/>
+                <constraint firstAttribute="bottom" secondItem="vmL-JJ-sCE" secondAttribute="bottom" constant="50" id="aW1-yW-VSc"/>
+                <constraint firstItem="YtA-ek-U1e" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bOz-hA-gTS"/>
+                <constraint firstItem="uo1-hO-KEY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="bip-jG-IKC"/>
+                <constraint firstItem="vmL-JJ-sCE" firstAttribute="top" secondItem="uo1-hO-KEY" secondAttribute="bottom" constant="18" id="sN3-jp-p5G"/>
+            </constraints>
+            <point key="canvasLocation" x="-22.137404580152669" y="19.718309859154932"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="microphone.fill" catalog="system" width="110" height="128"/>
+        <image name="paperclip" catalog="system" width="121" height="128"/>
+    </resources>
+</document>

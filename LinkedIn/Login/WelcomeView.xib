@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WelcomeViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="acceptButton" destination="I4U-HG-wzk" id="8UJ-gd-FZX"/>
+                <outlet property="appleLoginButton" destination="GFp-JW-rog" id="mcs-H0-1b7"/>
+                <outlet property="collectionView" destination="oyC-1H-JNc" id="mHx-RG-Bos"/>
+                <outlet property="googleLoginButton" destination="IX5-DC-Wsz" id="d4A-I2-dB7"/>
+                <outlet property="pageControl" destination="jVS-uq-UUH" id="tpP-bn-3Pl"/>
+                <outlet property="signInButton" destination="daZ-Jm-2BB" id="Tl8-Gx-Xky"/>
+                <outlet property="view" destination="iN0-l3-epB" id="4FL-8v-e9W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Linkedin-logo-transparent-white" translatesAutoresizingMaskIntoConstraints="NO" id="OhK-GB-fi0">
+                    <rect key="frame" x="16" y="132" width="99" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="17" id="Bdv-B6-lke"/>
+                        <constraint firstAttribute="width" constant="99" id="fvL-Lr-4MN"/>
+                    </constraints>
+                </imageView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="oyC-1H-JNc">
+                    <rect key="frame" x="16" y="186" width="361" height="231"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="361" id="bIQ-TG-gTS"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="heZ-iD-39w">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="jVS-uq-UUH">
+                    <rect key="frame" x="160" y="417" width="73" height="26"/>
+                    <connections>
+                        <action selector="pageChanged:" destination="-1" eventType="valueChanged" id="aNn-44-gBU"/>
+                    </connections>
+                </pageControl>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QLa-ky-nLx">
+                    <rect key="frame" x="16" y="451" width="361" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="i31-4d-Y4n"/>
+                    </constraints>
+                    <string key="text">Kabul Et ve Katıl veya Devam Et seçeneklerini tıklayarak, LinkedIn'in Kullanıcı Anlaşması, Gizlilik Politikası ve Çerez Politikasını kabu etmiş olursunuz.</string>
+                    <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFp-JW-rog">
+                    <rect key="frame" x="38" y="578" width="317" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="5td-La-DNk"/>
+                        <constraint firstAttribute="width" constant="317" id="dt5-WP-0pi"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="icons8-apple-20" title="Apple ile Devam Et" imagePadding="8">
+                        <backgroundConfiguration key="background" cornerRadius="20">
+                            <color key="strokeColor" systemColor="lightTextColor"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="daZ-Jm-2BB">
+                    <rect key="frame" x="52" y="694" width="288" height="39"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="oTr-zc-jVH"/>
+                        <constraint firstAttribute="width" constant="288" id="oud-aw-n4L"/>
+                    </constraints>
+                    <color key="tintColor" red="0.32156862745098036" green="0.68235294117647061" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Oturum açın">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signInClick:" destination="-1" eventType="touchUpInside" id="eCa-XV-fPH"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IX5-DC-Wsz">
+                    <rect key="frame" x="38" y="636" width="317" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GnQ-Xx-uuL"/>
+                        <constraint firstAttribute="width" constant="317" id="mvX-lq-cWc"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="icons8-google-20" title="Google ile Devam Et" imagePadding="5">
+                        <backgroundConfiguration key="background" cornerRadius="20">
+                            <color key="strokeColor" systemColor="lightTextColor"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4U-HG-wzk">
+                    <rect key="frame" x="38" y="520" width="317" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="317" id="PoE-iP-7Kh"/>
+                        <constraint firstAttribute="height" constant="40" id="vD0-Kz-Syy"/>
+                    </constraints>
+                    <color key="tintColor" red="0.10980392160000001" green="0.10980392160000001" blue="0.10980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Kabul Et ve Katıl">
+                        <backgroundConfiguration key="background" cornerRadius="20">
+                            <color key="backgroundColor" red="0.32156862745098036" green="0.68235294117647061" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signUpClick:" destination="-1" eventType="touchUpInside" id="xaQ-TH-872"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.090196078431372548" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="daZ-Jm-2BB" secondAttribute="bottom" constant="51" id="84h-bL-dLv"/>
+                <constraint firstItem="daZ-Jm-2BB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="52" id="93a-4c-p6B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GFp-JW-rog" secondAttribute="trailing" constant="38" id="Abx-KX-xqr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="QLa-ky-nLx" secondAttribute="trailing" constant="16" id="Afu-rL-vWs"/>
+                <constraint firstItem="IX5-DC-Wsz" firstAttribute="top" secondItem="GFp-JW-rog" secondAttribute="bottom" constant="18" id="Aum-lX-B2m"/>
+                <constraint firstItem="daZ-Jm-2BB" firstAttribute="top" secondItem="IX5-DC-Wsz" secondAttribute="bottom" constant="18" id="GAn-bm-OTO"/>
+                <constraint firstItem="QLa-ky-nLx" firstAttribute="top" secondItem="jVS-uq-UUH" secondAttribute="bottom" constant="8" id="HDx-fI-DAG"/>
+                <constraint firstItem="IX5-DC-Wsz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="38" id="Hmf-t1-BmV"/>
+                <constraint firstItem="GFp-JW-rog" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="38" id="JrZ-XL-REl"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="oyC-1H-JNc" secondAttribute="trailing" constant="16" id="LbP-dY-YVf"/>
+                <constraint firstItem="I4U-HG-wzk" firstAttribute="top" secondItem="QLa-ky-nLx" secondAttribute="bottom" constant="26" id="OOs-J1-rFX"/>
+                <constraint firstItem="jVS-uq-UUH" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="160" id="U5f-Yb-A2r"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="jVS-uq-UUH" secondAttribute="trailing" constant="160" id="Usw-Wm-jMm"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OhK-GB-fi0" secondAttribute="trailing" constant="278" id="VSN-mZ-g4q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IX5-DC-Wsz" secondAttribute="trailing" constant="38" id="Y0l-QS-aYf"/>
+                <constraint firstItem="jVS-uq-UUH" firstAttribute="top" secondItem="oyC-1H-JNc" secondAttribute="bottom" id="fjO-1i-Lh3"/>
+                <constraint firstItem="I4U-HG-wzk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="38" id="hQP-NY-QDN"/>
+                <constraint firstItem="oyC-1H-JNc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="hxc-94-nbQ"/>
+                <constraint firstItem="OhK-GB-fi0" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="14" id="kh4-D8-4q7"/>
+                <constraint firstItem="QLa-ky-nLx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="mLA-2c-sTj"/>
+                <constraint firstItem="oyC-1H-JNc" firstAttribute="top" secondItem="OhK-GB-fi0" secondAttribute="bottom" constant="37" id="oW8-Wc-LGG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="I4U-HG-wzk" secondAttribute="trailing" constant="38" id="tVV-ia-9lT"/>
+                <constraint firstItem="GFp-JW-rog" firstAttribute="top" secondItem="I4U-HG-wzk" secondAttribute="bottom" constant="18" id="tfM-2W-PLp"/>
+                <constraint firstItem="OhK-GB-fi0" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="uA1-oD-vPz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="daZ-Jm-2BB" secondAttribute="trailing" constant="53" id="yQu-A0-mVX"/>
+            </constraints>
+            <point key="canvasLocation" x="0.76335877862595414" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Linkedin-logo-transparent-white" width="3000" height="795"/>
+        <image name="icons8-apple-20" width="20" height="20"/>
+        <image name="icons8-google-20" width="20" height="20"/>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

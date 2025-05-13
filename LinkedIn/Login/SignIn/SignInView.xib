@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignInViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="appleSignInButton" destination="PN7-Ff-0uA" id="mLD-Eb-qa7"/>
+                <outlet property="emailTextField" destination="hJ2-kq-zqo" id="P84-Hg-VNO"/>
+                <outlet property="googleSignInButton" destination="kOS-Qk-m3f" id="xb5-tV-WUx"/>
+                <outlet property="passwordTextField" destination="F2k-0O-2N5" id="RQa-Su-2mJ"/>
+                <outlet property="signInButton" destination="8At-eG-Awa" id="flt-Hy-OaO"/>
+                <outlet property="view" destination="iN0-l3-epB" id="gVb-GF-vfo"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Linkedin-logo-transparent-white" translatesAutoresizingMaskIntoConstraints="NO" id="3Gg-bG-HJX">
+                    <rect key="frame" x="19" y="148" width="81" height="17"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="81" id="V9L-LS-rAa"/>
+                        <constraint firstAttribute="height" constant="17" id="mpM-ht-H60"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oturum aç" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hhe-ny-zTF">
+                    <rect key="frame" x="19" y="208" width="112" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="112" id="If6-6p-4W6"/>
+                        <constraint firstAttribute="height" constant="38" id="a3u-jL-iDq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="veya LinkedIn'e Katılın" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDD-bo-Ns7">
+                    <rect key="frame" x="19" y="247" width="122" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="14" id="Iu3-gX-bwR"/>
+                        <constraint firstAttribute="width" constant="122" id="Xmf-V8-XYW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="11"/>
+                    <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-posta veya Telefon" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hJ2-kq-zqo">
+                    <rect key="frame" x="19" y="292" width="358" height="34"/>
+                    <color key="backgroundColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="358" id="fSg-a6-nLv"/>
+                        <constraint firstAttribute="height" constant="34" id="noO-by-QFq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Şifre" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="F2k-0O-2N5">
+                    <rect key="frame" x="19" y="336" width="358" height="34"/>
+                    <color key="backgroundColor" red="0.71372549019607845" green="0.71372549019607845" blue="0.71372549019607845" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="3sb-kr-0sM"/>
+                        <constraint firstAttribute="width" constant="358" id="PNl-qo-67G"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Şifrenizi mi unuttunuz?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uE2-Gy-ftV">
+                    <rect key="frame" x="23" y="377" width="137" height="16"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="QU2-qj-te8"/>
+                        <constraint firstAttribute="width" constant="137" id="qSI-ah-Vsd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="11"/>
+                    <color key="textColor" red="0.31826557640000003" green="0.5959093285" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8At-eG-Awa">
+                    <rect key="frame" x="41" y="409" width="316" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="316" id="2tC-YX-yjs"/>
+                        <constraint firstAttribute="height" constant="38" id="jbB-9t-oEw"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Oturum açın">
+                        <backgroundConfiguration key="background" cornerRadius="20"/>
+                        <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i7e-lT-B7u">
+                    <rect key="frame" x="16" y="483" width="145" height="1"/>
+                    <color key="backgroundColor" red="0.88216147820154822" green="0.88216147820154822" blue="0.88216147820154822" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ovc-2Y-1aF"/>
+                        <constraint firstAttribute="width" constant="145" id="bIi-sG-vbF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOw-7R-qvY">
+                    <rect key="frame" x="230" y="483" width="145" height="1"/>
+                    <color key="backgroundColor" red="0.90340911077730579" green="0.90340911077730579" blue="0.90340911077730579" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="145" id="2no-tc-3C6"/>
+                        <constraint firstAttribute="height" constant="1" id="Oqv-x0-2mA"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="veya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcT-tO-H1Z">
+                    <rect key="frame" x="177" y="474" width="32" height="18"/>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.93371214108033618" green="0.93371214108033618" blue="0.93371214108033618" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PN7-Ff-0uA">
+                    <rect key="frame" x="41" y="513" width="316" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="38" id="Hmw-Y4-NZe"/>
+                        <constraint firstAttribute="width" constant="316" id="nea-s3-gJE"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="icons8-apple-20" title="Apple ile oturum açın" imagePadding="8">
+                        <backgroundConfiguration key="background" cornerRadius="20">
+                            <color key="strokeColor" systemColor="lightTextColor"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOS-Qk-m3f">
+                    <rect key="frame" x="41" y="565" width="316" height="38"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="316" id="Vyg-yV-t2y"/>
+                        <constraint firstAttribute="height" constant="38" id="dsi-SC-V9S"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="icons8-google-20" title="Google ile oturum açın" imagePadding="5">
+                        <backgroundConfiguration key="background" cornerRadius="20">
+                            <color key="strokeColor" systemColor="lightTextColor"/>
+                        </backgroundConfiguration>
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="16"/>
+                    </buttonConfiguration>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdB-uI-j0M">
+                    <rect key="frame" x="327" y="141" width="40" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="WNK-an-2SR"/>
+                        <constraint firstAttribute="height" constant="30" id="jCJ-EP-60s"/>
+                    </constraints>
+                    <color key="tintColor" systemColor="lightTextColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="X">
+                        <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="dismissPopUp:" destination="-1" eventType="touchUpInside" id="yCH-gL-Xlm"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.090196078431372548" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="F2k-0O-2N5" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="0fZ-57-8oo"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="uE2-Gy-ftV" secondAttribute="trailing" constant="233" id="1Eq-Jm-a2y"/>
+                <constraint firstItem="eOw-7R-qvY" firstAttribute="top" secondItem="8At-eG-Awa" secondAttribute="bottom" constant="36" id="23Q-qo-2Qb"/>
+                <constraint firstItem="Hhe-ny-zTF" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="5La-ym-Ac0"/>
+                <constraint firstItem="PN7-Ff-0uA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="842-Ob-brz"/>
+                <constraint firstItem="DdB-uI-j0M" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="23" id="860-WV-IIa"/>
+                <constraint firstItem="hJ2-kq-zqo" firstAttribute="top" secondItem="lDD-bo-Ns7" secondAttribute="bottom" constant="31" id="AD4-l9-AMb"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lDD-bo-Ns7" secondAttribute="trailing" constant="252" id="Agn-pb-Q5u"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hJ2-kq-zqo" secondAttribute="trailing" constant="16" id="BQ3-2X-1di"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Gg-bG-HJX" secondAttribute="trailing" constant="293" id="BU6-b8-q4B"/>
+                <constraint firstItem="uE2-Gy-ftV" firstAttribute="top" secondItem="F2k-0O-2N5" secondAttribute="bottom" constant="7" id="Bks-aI-VqE"/>
+                <constraint firstItem="i7e-lT-B7u" firstAttribute="top" secondItem="8At-eG-Awa" secondAttribute="bottom" constant="36" id="BmG-Q7-yom"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DdB-uI-j0M" secondAttribute="trailing" constant="26" id="Eko-Tf-Qhv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="kOS-Qk-m3f" secondAttribute="bottom" constant="270" id="Emc-gr-URO"/>
+                <constraint firstItem="i7e-lT-B7u" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="IbC-9d-cIT"/>
+                <constraint firstItem="3Gg-bG-HJX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="J7U-KS-EN3"/>
+                <constraint firstItem="F2k-0O-2N5" firstAttribute="top" secondItem="hJ2-kq-zqo" secondAttribute="bottom" constant="10" id="LBf-5k-UZS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Hhe-ny-zTF" secondAttribute="trailing" constant="262" id="MQE-E5-XcB"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CcT-tO-H1Z" secondAttribute="trailing" constant="184" id="SIH-bg-0ML"/>
+                <constraint firstItem="CcT-tO-H1Z" firstAttribute="top" secondItem="8At-eG-Awa" secondAttribute="bottom" constant="27" id="Ud1-pl-PXb"/>
+                <constraint firstItem="hJ2-kq-zqo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="WTb-5G-aLH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8At-eG-Awa" secondAttribute="trailing" constant="36" id="Y3p-eg-kI9"/>
+                <constraint firstItem="8At-eG-Awa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="Z4w-XA-d6u"/>
+                <constraint firstItem="Hhe-ny-zTF" firstAttribute="top" secondItem="3Gg-bG-HJX" secondAttribute="bottom" constant="43" id="bQX-SP-Cx4"/>
+                <constraint firstItem="lDD-bo-Ns7" firstAttribute="top" secondItem="Hhe-ny-zTF" secondAttribute="bottom" constant="1" id="bww-Ds-Aa4"/>
+                <constraint firstItem="kOS-Qk-m3f" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="41" id="c0s-ww-yuY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F2k-0O-2N5" secondAttribute="trailing" constant="16" id="cb8-iy-b7W"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PN7-Ff-0uA" secondAttribute="trailing" constant="36" id="dyA-gA-4Ep"/>
+                <constraint firstItem="8At-eG-Awa" firstAttribute="top" secondItem="uE2-Gy-ftV" secondAttribute="bottom" constant="16" id="eh8-Yz-Kd6"/>
+                <constraint firstItem="kOS-Qk-m3f" firstAttribute="top" secondItem="PN7-Ff-0uA" secondAttribute="bottom" constant="18" id="g1i-b6-MC9"/>
+                <constraint firstItem="lDD-bo-Ns7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="19" id="hQH-Ew-Kmp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="kOS-Qk-m3f" secondAttribute="trailing" constant="36" id="ltX-GY-iaP"/>
+                <constraint firstItem="3Gg-bG-HJX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="30" id="t9S-Qy-DiU"/>
+                <constraint firstItem="CcT-tO-H1Z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="177" id="tTk-bo-TBO"/>
+                <constraint firstAttribute="trailing" secondItem="eOw-7R-qvY" secondAttribute="trailing" constant="18" id="tpA-Kv-7vP"/>
+                <constraint firstItem="PN7-Ff-0uA" firstAttribute="top" secondItem="CcT-tO-H1Z" secondAttribute="bottom" constant="21" id="v2g-fu-kFh"/>
+                <constraint firstItem="uE2-Gy-ftV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="23" id="yWW-tJ-uPN"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Linkedin-logo-transparent-white" width="3000" height="795"/>
+        <image name="icons8-apple-20" width="20" height="20"/>
+        <image name="icons8-google-20" width="20" height="20"/>
+        <systemColor name="lightTextColor">
+            <color white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NotificationViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="notificationSegment" destination="PpD-lA-uBC" id="jVk-11-MjS"/>
+                <outlet property="notificationTableView" destination="ciS-ck-4zd" id="keo-7s-PtT"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0JQ-6j-pYx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ciS-ck-4zd">
+                    <rect key="frame" x="0.0" y="134" width="393" height="718"/>
+                    <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="sectionIndexBackgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="PpD-lA-uBC">
+                    <rect key="frame" x="14" y="81" width="361" height="32"/>
+                    <segments>
+                        <segment title="All"/>
+                        <segment title="Jobs"/>
+                        <segment title="My posts"/>
+                        <segment title="Mentions"/>
+                    </segments>
+                </segmentedControl>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.12941176470588234" green="0.16078431372549018" blue="0.22745098039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PpD-lA-uBC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="5hs-vd-hKk"/>
+                <constraint firstItem="ciS-ck-4zd" firstAttribute="top" secondItem="PpD-lA-uBC" secondAttribute="bottom" constant="22" id="Gcx-tL-4Dd"/>
+                <constraint firstItem="PpD-lA-uBC" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="14" id="aAE-QR-Nki"/>
+                <constraint firstItem="ciS-ck-4zd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eKJ-0q-N3L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PpD-lA-uBC" secondAttribute="trailing" constant="18" id="jGh-qe-Owv"/>
+                <constraint firstAttribute="bottom" secondItem="ciS-ck-4zd" secondAttribute="bottom" id="lgb-os-TJR"/>
+                <constraint firstAttribute="trailing" secondItem="ciS-ck-4zd" secondAttribute="trailing" id="vaA-8q-o4V"/>
+            </constraints>
+            <point key="canvasLocation" x="-25.190839694656489" y="19.718309859154932"/>
+        </view>
+    </objects>
+</document>

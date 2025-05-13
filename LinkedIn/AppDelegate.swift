@@ -10,10 +10,19 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Pencereyi oluştur
+        window = UIWindow(frame: UIScreen.main.bounds)
+
+        // Başlangıç ekranı için ViewController'ı yükle
+        let initialViewController = WelcomeViewController()
+        window?.rootViewController = initialViewController
+
+        // Pencereyi görünür yap
+        window?.makeKeyAndVisible()
+
         return true
     }
 

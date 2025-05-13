@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InvitationTableCell" rowHeight="28" id="fz6-AX-azG" customClass="InvitationTableCell" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fz6-AX-azG" id="rJr-G2-fjp">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="28"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jRe-10-drh">
+                        <rect key="frame" x="0.0" y="0.0" width="332" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invitations (15)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUj-K4-qyo">
+                                <rect key="frame" x="8" y="9" width="102" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="QMz-Vq-JLn"/>
+                                    <constraint firstAttribute="width" constant="102" id="cV0-xE-ju9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ad-Wx-xmW">
+                                <rect key="frame" x="296" y="9" width="28" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="8b3-XH-mi2"/>
+                                    <constraint firstAttribute="width" constant="28" id="kyl-oe-q5C"/>
+                                </constraints>
+                                <color key="tintColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="small"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="detailClick:" destination="fz6-AX-azG" eventType="touchUpInside" id="HUx-t6-L59"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="7ad-Wx-xmW" firstAttribute="top" secondItem="jRe-10-drh" secondAttribute="top" constant="9" id="1tc-lp-UPK"/>
+                            <constraint firstAttribute="width" constant="332" id="BeN-5l-kGc"/>
+                            <constraint firstAttribute="trailing" secondItem="7ad-Wx-xmW" secondAttribute="trailing" constant="8" id="H3E-Ce-GK6"/>
+                            <constraint firstAttribute="bottom" secondItem="vUj-K4-qyo" secondAttribute="bottom" constant="9" id="Wme-Ck-Hrd"/>
+                            <constraint firstAttribute="height" constant="30" id="bEE-7r-QTC"/>
+                            <constraint firstItem="vUj-K4-qyo" firstAttribute="leading" secondItem="jRe-10-drh" secondAttribute="leading" constant="8" id="h53-oe-xC6"/>
+                            <constraint firstItem="vUj-K4-qyo" firstAttribute="top" secondItem="jRe-10-drh" secondAttribute="top" constant="9" id="mpx-tm-n21"/>
+                            <constraint firstAttribute="bottom" secondItem="7ad-Wx-xmW" secondAttribute="bottom" constant="9" id="ts8-wY-Ytw"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="jRe-10-drh" firstAttribute="top" secondItem="rJr-G2-fjp" secondAttribute="top" id="DbM-4A-SLt"/>
+                    <constraint firstAttribute="bottom" secondItem="jRe-10-drh" secondAttribute="bottom" constant="-2" id="TUO-SH-Yl2"/>
+                    <constraint firstItem="jRe-10-drh" firstAttribute="leading" secondItem="rJr-G2-fjp" secondAttribute="leading" id="lfA-nw-qDG"/>
+                    <constraint firstAttribute="trailing" secondItem="jRe-10-drh" secondAttribute="trailing" constant="-6" id="zE0-LJ-B8N"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="invitationCountDetailButton" destination="7ad-Wx-xmW" id="ZTQ-S4-eRd"/>
+                <outlet property="invitationCountLabel" destination="vUj-K4-qyo" id="1W0-JB-Hr4"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="9.1549295774647899"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>

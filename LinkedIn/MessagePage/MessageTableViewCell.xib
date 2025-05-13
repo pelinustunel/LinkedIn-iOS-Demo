@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MessageTableViewCell" rowHeight="70" id="5rI-It-lpa" customClass="MessageTableViewCell" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5rI-It-lpa" id="Tye-NM-j3O">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0r6-PD-hab">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="089-ja-1RK">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="70"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kbK-ip-abB">
+                                        <rect key="frame" x="14" y="15" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="j8x-eA-9zg"/>
+                                            <constraint firstAttribute="height" constant="40" id="qoY-qC-Gtv"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Franklin Tavarez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjA-18-uWf">
+                                        <rect key="frame" x="72" y="11" width="289" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="PTx-fG-wEV"/>
+                                            <constraint firstAttribute="width" constant="289" id="t0w-1X-zrg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Merhaba yeni bir iş alımımız var." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="77x-la-iz9">
+                                        <rect key="frame" x="72" y="37" width="321" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="321" id="Uhu-vp-1un"/>
+                                            <constraint firstAttribute="height" constant="25" id="WUq-in-L26"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="77x-la-iz9" secondAttribute="bottom" constant="8" id="9Tj-lq-uu5"/>
+                                    <constraint firstItem="kbK-ip-abB" firstAttribute="leading" secondItem="089-ja-1RK" secondAttribute="leading" constant="14" id="AVs-jB-Tz5"/>
+                                    <constraint firstAttribute="bottom" secondItem="kbK-ip-abB" secondAttribute="bottom" constant="15" id="BbK-Pk-9C2"/>
+                                    <constraint firstAttribute="trailing" secondItem="77x-la-iz9" secondAttribute="trailing" id="HKr-0T-eU7"/>
+                                    <constraint firstItem="VjA-18-uWf" firstAttribute="top" secondItem="089-ja-1RK" secondAttribute="top" constant="11" id="XTV-Y5-29h"/>
+                                    <constraint firstItem="VjA-18-uWf" firstAttribute="leading" secondItem="kbK-ip-abB" secondAttribute="trailing" constant="18" id="ZVP-O5-Zhq"/>
+                                    <constraint firstItem="77x-la-iz9" firstAttribute="top" secondItem="VjA-18-uWf" secondAttribute="bottom" constant="1" id="fZO-03-D9c"/>
+                                    <constraint firstItem="77x-la-iz9" firstAttribute="leading" secondItem="kbK-ip-abB" secondAttribute="trailing" constant="18" id="kje-oh-kZ3"/>
+                                    <constraint firstItem="kbK-ip-abB" firstAttribute="top" secondItem="089-ja-1RK" secondAttribute="top" constant="15" id="lHM-Ej-hLS"/>
+                                    <constraint firstAttribute="trailing" secondItem="VjA-18-uWf" secondAttribute="trailing" constant="32" id="ysG-fW-gde"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="0r6-PD-hab" firstAttribute="top" secondItem="Tye-NM-j3O" secondAttribute="top" id="Fde-BW-kWk"/>
+                    <constraint firstAttribute="bottom" secondItem="0r6-PD-hab" secondAttribute="bottom" id="Rn9-tl-1DN"/>
+                    <constraint firstItem="0r6-PD-hab" firstAttribute="leading" secondItem="Tye-NM-j3O" secondAttribute="leading" id="fbR-zV-4cA"/>
+                    <constraint firstAttribute="trailing" secondItem="0r6-PD-hab" secondAttribute="trailing" id="jRa-EO-I7c"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="messageLabel" destination="77x-la-iz9" id="aeX-J9-ccu"/>
+                <outlet property="messagePersonNameLabel" destination="VjA-18-uWf" id="aVp-dW-Xt0"/>
+                <outlet property="messageProfileImageView" destination="kbK-ip-abB" id="AK5-17-igP"/>
+            </connections>
+            <point key="canvasLocation" x="176.33587786259542" y="7.746478873239437"/>
+        </tableViewCell>
+    </objects>
+</document>

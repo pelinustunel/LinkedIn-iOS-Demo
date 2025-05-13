@@ -6,8 +6,29 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		63A527A02DB50F840000D470 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 63A5279F2DB50F840000D470 /* RxCocoa */; };
+		63A527A22DB50F840000D470 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 63A527A12DB50F840000D470 /* RxSwift */; };
+		63A527A52DB530B90000D470 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 63A527A42DB530B90000D470 /* Alamofire */; };
+		96EDABC0C3356116CEFFD3D8 /* Pods_LinkedIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62C9329F24DBE5F5A1814120 /* Pods_LinkedIn.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		631FAB052DB1519600CB7A65 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C6A7502CF9FAA000A30197 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C6A7572CF9FAA000A30197;
+			remoteInfo = LinkedIn;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		2EBE5491BEFE34D797806290 /* Pods-LinkedIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedIn.debug.xcconfig"; path = "Target Support Files/Pods-LinkedIn/Pods-LinkedIn.debug.xcconfig"; sourceTree = "<group>"; };
+		62C9329F24DBE5F5A1814120 /* Pods_LinkedIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LinkedIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		631FAAFF2DB1519600CB7A65 /* FullNavigationTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FullNavigationTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63C6A7582CF9FAA000A30197 /* LinkedIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkedIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8DF45E9EC4D7F8A085CCBCDA /* Pods-LinkedIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkedIn.release.xcconfig"; path = "Target Support Files/Pods-LinkedIn/Pods-LinkedIn.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -21,6 +42,11 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		631FAB002DB1519600CB7A65 /* FullNavigationTest */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FullNavigationTest;
+			sourceTree = "<group>";
+		};
 		63C6A75A2CF9FAA000A30197 /* LinkedIn */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
@@ -32,21 +58,44 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		63C6A7552CF9FAA000A30197 /* Frameworks */ = {
+		631FAAFC2DB1519600CB7A65 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		63C6A7552CF9FAA000A30197 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A527A22DB50F840000D470 /* RxSwift in Frameworks */,
+				63A527A52DB530B90000D470 /* Alamofire in Frameworks */,
+				63A527A02DB50F840000D470 /* RxCocoa in Frameworks */,
+				96EDABC0C3356116CEFFD3D8 /* Pods_LinkedIn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		60FDFF53331086E54AF622AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EBE5491BEFE34D797806290 /* Pods-LinkedIn.debug.xcconfig */,
+				8DF45E9EC4D7F8A085CCBCDA /* Pods-LinkedIn.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		63C6A74F2CF9FAA000A30197 = {
 			isa = PBXGroup;
 			children = (
 				63C6A75A2CF9FAA000A30197 /* LinkedIn */,
+				631FAB002DB1519600CB7A65 /* FullNavigationTest */,
 				63C6A7592CF9FAA000A30197 /* Products */,
+				60FDFF53331086E54AF622AB /* Pods */,
+				DD511B3B6807F0B52CE165E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,20 +103,54 @@
 			isa = PBXGroup;
 			children = (
 				63C6A7582CF9FAA000A30197 /* LinkedIn.app */,
+				631FAAFF2DB1519600CB7A65 /* FullNavigationTest.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		DD511B3B6807F0B52CE165E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62C9329F24DBE5F5A1814120 /* Pods_LinkedIn.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		631FAAFE2DB1519600CB7A65 /* FullNavigationTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 631FAB092DB1519600CB7A65 /* Build configuration list for PBXNativeTarget "FullNavigationTest" */;
+			buildPhases = (
+				631FAAFB2DB1519600CB7A65 /* Sources */,
+				631FAAFC2DB1519600CB7A65 /* Frameworks */,
+				631FAAFD2DB1519600CB7A65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				631FAB062DB1519600CB7A65 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				631FAB002DB1519600CB7A65 /* FullNavigationTest */,
+			);
+			name = FullNavigationTest;
+			packageProductDependencies = (
+			);
+			productName = FullNavigationTest;
+			productReference = 631FAAFF2DB1519600CB7A65 /* FullNavigationTest.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		63C6A7572CF9FAA000A30197 /* LinkedIn */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 63C6A76B2CF9FAA100A30197 /* Build configuration list for PBXNativeTarget "LinkedIn" */;
 			buildPhases = (
+				28F76A1FB2A23B6B738E79C9 /* [CP] Check Pods Manifest.lock */,
 				63C6A7542CF9FAA000A30197 /* Sources */,
 				63C6A7552CF9FAA000A30197 /* Frameworks */,
 				63C6A7562CF9FAA000A30197 /* Resources */,
+				BA74369CB5E7110D662EE39D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -77,8 +160,6 @@
 				63C6A75A2CF9FAA000A30197 /* LinkedIn */,
 			);
 			name = LinkedIn;
-			packageProductDependencies = (
-			);
 			productName = LinkedIn;
 			productReference = 63C6A7582CF9FAA000A30197 /* LinkedIn.app */;
 			productType = "com.apple.product-type.application";
@@ -90,9 +171,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1600;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					631FAAFE2DB1519600CB7A65 = {
+						CreatedOnToolsVersion = 16.3;
+						TestTargetID = 63C6A7572CF9FAA000A30197;
+					};
 					63C6A7572CF9FAA000A30197 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -107,17 +192,29 @@
 			);
 			mainGroup = 63C6A74F2CF9FAA000A30197;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				63A5279E2DB50F840000D470 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				63A527A32DB530B90000D470 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 63C6A7592CF9FAA000A30197 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				63C6A7572CF9FAA000A30197 /* LinkedIn */,
+				631FAAFE2DB1519600CB7A65 /* FullNavigationTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		631FAAFD2DB1519600CB7A65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63C6A7562CF9FAA000A30197 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -127,7 +224,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		28F76A1FB2A23B6B738E79C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LinkedIn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA74369CB5E7110D662EE39D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedIn/Pods-LinkedIn-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LinkedIn/Pods-LinkedIn-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LinkedIn/Pods-LinkedIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		631FAAFB2DB1519600CB7A65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		63C6A7542CF9FAA000A30197 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -137,20 +287,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		631FAB062DB1519600CB7A65 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C6A7572CF9FAA000A30197 /* LinkedIn */;
+			targetProxy = 631FAB052DB1519600CB7A65 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		631FAB072DB1519600CB7A65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.FullNavigationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LinkedIn;
+			};
+			name = Debug;
+		};
+		631FAB082DB1519600CB7A65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PF3BM28855;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = pelinustunel.FullNavigationTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LinkedIn;
+			};
+			name = Release;
+		};
 		63C6A76C2CF9FAA100A30197 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EBE5491BEFE34D797806290 /* Pods-LinkedIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PF3BM28855;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkedIn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -168,17 +363,18 @@
 		};
 		63C6A76D2CF9FAA100A30197 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DF45E9EC4D7F8A085CCBCDA /* Pods-LinkedIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PF3BM28855;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LinkedIn/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -316,6 +512,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		631FAB092DB1519600CB7A65 /* Build configuration list for PBXNativeTarget "FullNavigationTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				631FAB072DB1519600CB7A65 /* Debug */,
+				631FAB082DB1519600CB7A65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		63C6A7532CF9FAA000A30197 /* Build configuration list for PBXProject "LinkedIn" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -335,6 +540,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		63A5279E2DB50F840000D470 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
+		63A527A32DB530B90000D470 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		63A5279F2DB50F840000D470 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63A5279E2DB50F840000D470 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		63A527A12DB50F840000D470 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63A5279E2DB50F840000D470 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		63A527A42DB530B90000D470 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63A527A32DB530B90000D470 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 63C6A7502CF9FAA000A30197 /* Project object */;
 }

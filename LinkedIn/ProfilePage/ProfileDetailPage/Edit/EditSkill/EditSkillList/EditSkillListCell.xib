@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EditSkillListCell" rowHeight="57" id="ztQ-6i-0kB" customClass="EditSkillListCell" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ztQ-6i-0kB" id="ZgD-Oc-OVh">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Hxy-pI-3cw">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgO-Ga-Mh2">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="57"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Geliştirme" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP7-vZ-VT1">
+                                        <rect key="frame" x="16" y="8" width="336" height="41"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNA-3S-Pmu">
+                                        <rect key="frame" x="360" y="16" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="2lm-O2-Mwg"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="3oi-OC-CGq"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="25" id="Xfs-JF-76A"/>
+                                            <constraint firstAttribute="width" constant="25" id="dIR-tJ-agx"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="25" id="ecr-UO-03n"/>
+                                            <constraint firstAttribute="height" relation="lessThanOrEqual" constant="25" id="gY5-7c-Xbx"/>
+                                        </constraints>
+                                        <color key="tintColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="pencil" catalog="system">
+                                            <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="skillEditClickButton:" destination="ztQ-6i-0kB" eventType="touchUpInside" id="gat-uJ-9ZD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="vNA-3S-Pmu" firstAttribute="top" secondItem="hgO-Ga-Mh2" secondAttribute="top" constant="16" id="7LE-9g-DVA"/>
+                                    <constraint firstItem="vNA-3S-Pmu" firstAttribute="leading" secondItem="vP7-vZ-VT1" secondAttribute="trailing" constant="8" id="CJe-fN-Ezv"/>
+                                    <constraint firstAttribute="bottom" secondItem="vNA-3S-Pmu" secondAttribute="bottom" constant="16" id="HXD-g1-Be3"/>
+                                    <constraint firstAttribute="bottom" secondItem="vP7-vZ-VT1" secondAttribute="bottom" constant="8" id="J3B-vr-UsI"/>
+                                    <constraint firstItem="vP7-vZ-VT1" firstAttribute="leading" secondItem="hgO-Ga-Mh2" secondAttribute="leading" constant="16" id="YNj-OD-BHw"/>
+                                    <constraint firstItem="vP7-vZ-VT1" firstAttribute="top" secondItem="hgO-Ga-Mh2" secondAttribute="top" constant="8" id="ixa-fo-Tex"/>
+                                    <constraint firstAttribute="trailing" secondItem="vNA-3S-Pmu" secondAttribute="trailing" constant="8" id="yiz-bI-UNj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="Hxy-pI-3cw" firstAttribute="top" secondItem="ZgD-Oc-OVh" secondAttribute="top" id="5Jm-Y6-EPN"/>
+                    <constraint firstItem="Hxy-pI-3cw" firstAttribute="leading" secondItem="ZgD-Oc-OVh" secondAttribute="leading" id="Da0-rV-yTV"/>
+                    <constraint firstAttribute="trailing" secondItem="Hxy-pI-3cw" secondAttribute="trailing" id="kYP-wA-aNa"/>
+                    <constraint firstAttribute="bottom" secondItem="Hxy-pI-3cw" secondAttribute="bottom" id="oCR-cg-zr0"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="editSkillNameLabel" destination="vP7-vZ-VT1" id="n7a-qh-5zX"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="8.0985915492957758"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="pencil" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

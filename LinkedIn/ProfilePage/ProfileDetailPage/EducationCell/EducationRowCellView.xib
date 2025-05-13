@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="EducationRowCellViewController" rowHeight="119" id="qiQ-i9-qq1" customClass="EducationRowCellViewController" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qiQ-i9-qq1" id="s6W-qH-GlY">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="p3e-Di-yY1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqe-tI-M5L">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="building.2.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wST-Gq-jrF">
+                                        <rect key="frame" x="19" y="25.333333333333332" width="50" height="49.333333333333343"/>
+                                        <color key="tintColor" red="0.86053900350000001" green="0.86053900350000001" blue="0.86053900350000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="4hX-Ay-gig"/>
+                                            <constraint firstAttribute="height" constant="50" id="7Ne-bg-M5x"/>
+                                        </constraints>
+                                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kırklareli Üniversitesi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cU-uA-ahD">
+                                        <rect key="frame" x="77" y="25" width="176" height="17"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bachelor's degree, Software Engineering" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TqI-di-KfL">
+                                        <rect key="frame" x="77" y="43" width="236" height="14.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2021 - 2025" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5LI-i9-KUb">
+                                        <rect key="frame" x="77" y="74.333333333333329" width="166" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Software Engineer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K1q-cA-fcB">
+                                        <rect key="frame" x="77" y="60" width="166" height="12"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wST-Gq-jrF" secondAttribute="bottom" constant="25" id="3cB-CY-rav"/>
+                                    <constraint firstItem="TqI-di-KfL" firstAttribute="leading" secondItem="wST-Gq-jrF" secondAttribute="trailing" constant="8" symbolic="YES" id="6Av-Sz-aY3"/>
+                                    <constraint firstItem="wST-Gq-jrF" firstAttribute="top" secondItem="Uqe-tI-M5L" secondAttribute="top" constant="25" id="6Tf-Ms-Nuw"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cU-uA-ahD" secondAttribute="trailing" constant="140" id="Bls-uJ-QYy"/>
+                                    <constraint firstAttribute="trailing" secondItem="TqI-di-KfL" secondAttribute="trailing" constant="80" id="Db7-Up-t35"/>
+                                    <constraint firstItem="6cU-uA-ahD" firstAttribute="leading" secondItem="wST-Gq-jrF" secondAttribute="trailing" constant="8" symbolic="YES" id="Dl1-iw-bjp"/>
+                                    <constraint firstAttribute="trailing" secondItem="K1q-cA-fcB" secondAttribute="trailing" constant="150" id="JVZ-78-cv8"/>
+                                    <constraint firstAttribute="trailing" secondItem="5LI-i9-KUb" secondAttribute="trailing" constant="150" id="KsQ-81-eDL"/>
+                                    <constraint firstItem="5LI-i9-KUb" firstAttribute="top" secondItem="K1q-cA-fcB" secondAttribute="bottom" constant="2.3300000000000001" id="Sqb-hh-bCc"/>
+                                    <constraint firstItem="TqI-di-KfL" firstAttribute="top" secondItem="6cU-uA-ahD" secondAttribute="bottom" constant="1" id="Zcn-lq-9eA"/>
+                                    <constraint firstItem="K1q-cA-fcB" firstAttribute="leading" secondItem="wST-Gq-jrF" secondAttribute="trailing" constant="8" symbolic="YES" id="d9O-cL-oQf"/>
+                                    <constraint firstItem="5LI-i9-KUb" firstAttribute="leading" secondItem="wST-Gq-jrF" secondAttribute="trailing" constant="8" symbolic="YES" id="ib9-cd-eba"/>
+                                    <constraint firstItem="6cU-uA-ahD" firstAttribute="top" secondItem="Uqe-tI-M5L" secondAttribute="top" constant="25" id="ivt-Hd-5rO"/>
+                                    <constraint firstItem="K1q-cA-fcB" firstAttribute="top" secondItem="TqI-di-KfL" secondAttribute="bottom" constant="2.6699999999999999" id="r7u-at-uil"/>
+                                    <constraint firstItem="wST-Gq-jrF" firstAttribute="leading" secondItem="Uqe-tI-M5L" secondAttribute="leading" constant="19" id="uCq-i5-gnN"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="p3e-Di-yY1" secondAttribute="bottom" id="Pnh-O0-4ef"/>
+                    <constraint firstItem="p3e-Di-yY1" firstAttribute="top" secondItem="s6W-qH-GlY" secondAttribute="top" id="RsP-d8-0Nb"/>
+                    <constraint firstItem="p3e-Di-yY1" firstAttribute="leading" secondItem="s6W-qH-GlY" secondAttribute="leading" id="TEr-Yp-3lK"/>
+                    <constraint firstAttribute="trailing" secondItem="p3e-Di-yY1" secondAttribute="trailing" id="eKh-yr-tgH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bachelorLabel" destination="TqI-di-KfL" id="beb-2J-2KO"/>
+                <outlet property="educationDateLabel" destination="5LI-i9-KUb" id="Ldc-RM-m7h"/>
+                <outlet property="educationImageView" destination="wST-Gq-jrF" id="kFh-AJ-bO3"/>
+                <outlet property="educationNameLabel" destination="6cU-uA-ahD" id="U0L-4O-NUH"/>
+                <outlet property="fieldLabel" destination="K1q-cA-fcB" id="saj-S2-idV"/>
+            </connections>
+            <point key="canvasLocation" x="148.85496183206106" y="21.83098591549296"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="building.2.fill" catalog="system" width="108" height="128"/>
+    </resources>
+</document>

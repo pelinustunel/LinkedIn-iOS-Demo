@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-linkedin---in-logo-used-for-professional-networking,-100" translatesAutoresizingMaskIntoConstraints="NO" id="YNh-uV-Cf4">
+                                <rect key="frame" x="155" y="343" width="89" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="WiK-tc-Ff4"/>
+                                    <constraint firstAttribute="height" constant="84" id="pV6-BD-zjQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Linkedin-logo-transparent-white" translatesAutoresizingMaskIntoConstraints="NO" id="qVP-R4-9AU">
+                                <rect key="frame" x="90" y="735" width="219" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="QX2-S8-JnR"/>
+                                    <constraint firstAttribute="width" constant="219" id="Xrf-Js-sXJ"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.090196078431372548" green="0.11372549019607843" blue="0.15686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qVP-R4-9AU" secondAttribute="trailing" constant="84" id="1dc-dj-IYZ"/>
+                            <constraint firstItem="YNh-uV-Cf4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="284" id="IPt-WQ-wko"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qVP-R4-9AU" secondAttribute="bottom" constant="58" id="Sy4-Ll-uKl"/>
+                            <constraint firstItem="qVP-R4-9AU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="chM-ba-ZaX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YNh-uV-Cf4" secondAttribute="trailing" constant="149" id="tje-9r-6C4"/>
+                            <constraint firstItem="YNh-uV-Cf4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="155" id="yfG-Qs-eEP"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="374.64788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Linkedin-logo-transparent-white" width="3000" height="795"/>
+        <image name="icons8-linkedin---in-logo-used-for-professional-networking,-100" width="100" height="100"/>
+    </resources>
+</document>

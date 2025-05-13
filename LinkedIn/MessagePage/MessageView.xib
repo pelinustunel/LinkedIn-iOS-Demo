@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="messageTableView" destination="hFZ-ii-G5s" id="SrT-ND-3Tv"/>
+                <outlet property="view" destination="iN0-l3-epB" id="KHA-bo-7DF"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hFZ-ii-G5s">
+                    <rect key="frame" x="0.0" y="81" width="393" height="737"/>
+                    <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hFZ-ii-G5s" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="JCq-cD-anZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="hFZ-ii-G5s" secondAttribute="trailing" id="aRx-Oi-sYj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="hFZ-ii-G5s" secondAttribute="bottom" id="oEc-5b-a4J"/>
+                <constraint firstItem="hFZ-ii-G5s" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="22" id="oPR-sl-5Jw"/>
+            </constraints>
+            <point key="canvasLocation" x="40" y="21"/>
+        </view>
+    </objects>
+</document>

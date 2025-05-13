@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ManageNetworkTableCell" rowHeight="28" id="RY5-1z-ntV" customClass="ManageNetworkTableCell" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="326" height="28"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RY5-1z-ntV" id="vwp-Xf-S2F">
+                <rect key="frame" x="0.0" y="0.0" width="326" height="28"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqg-04-gEI">
+                        <rect key="frame" x="0.0" y="-1" width="332" height="30"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage my network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-5h-fxC">
+                                <rect key="frame" x="8" y="9" width="124" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="12" id="Lau-gX-bPr"/>
+                                    <constraint firstAttribute="width" constant="124" id="Vnk-2y-S5v"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MJT-ch-MGu">
+                                <rect key="frame" x="296" y="9" width="28" height="12"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="28" id="P8v-XK-WHe"/>
+                                    <constraint firstAttribute="height" constant="12" id="nha-eO-h7v"/>
+                                </constraints>
+                                <color key="tintColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <imageReference key="image" image="arrowshape.right.fill" catalog="system" symbolScale="small"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="F7b-5h-fxC" firstAttribute="top" secondItem="oqg-04-gEI" secondAttribute="top" constant="9" id="BhD-E0-vFe"/>
+                            <constraint firstAttribute="trailing" secondItem="MJT-ch-MGu" secondAttribute="trailing" constant="8" id="DJM-yl-iwS"/>
+                            <constraint firstAttribute="height" constant="30" id="LRS-Qc-2em"/>
+                            <constraint firstAttribute="width" constant="332" id="PCu-Hr-V6o"/>
+                            <constraint firstAttribute="bottom" secondItem="F7b-5h-fxC" secondAttribute="bottom" constant="9" id="UXU-PK-pYY"/>
+                            <constraint firstItem="MJT-ch-MGu" firstAttribute="top" secondItem="oqg-04-gEI" secondAttribute="top" constant="9" id="Xnq-hQ-qLC"/>
+                            <constraint firstAttribute="bottom" secondItem="MJT-ch-MGu" secondAttribute="bottom" constant="9" id="coa-s0-19k"/>
+                            <constraint firstItem="F7b-5h-fxC" firstAttribute="leading" secondItem="oqg-04-gEI" secondAttribute="leading" constant="8" id="wtO-bV-1SJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="oqg-04-gEI" firstAttribute="leading" secondItem="vwp-Xf-S2F" secondAttribute="leading" id="b0K-KV-W07"/>
+                    <constraint firstAttribute="trailing" secondItem="oqg-04-gEI" secondAttribute="trailing" constant="-6" id="bR0-PC-iB3"/>
+                    <constraint firstItem="oqg-04-gEI" firstAttribute="top" secondItem="vwp-Xf-S2F" secondAttribute="top" constant="-1" id="m6s-JL-syz"/>
+                    <constraint firstAttribute="bottom" secondItem="oqg-04-gEI" secondAttribute="bottom" constant="-1" id="zUb-TE-8kY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="manageNetworkDetailButton" destination="MJT-ch-MGu" id="BYM-AI-DDf"/>
+                <outlet property="manageNetworkLabel" destination="F7b-5h-fxC" id="IsP-Yj-lVZ"/>
+            </connections>
+            <point key="canvasLocation" x="167.93893129770993" y="9.1549295774647899"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="arrowshape.right.fill" catalog="system" width="128" height="104"/>
+    </resources>
+</document>

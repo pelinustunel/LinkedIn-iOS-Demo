@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditSkillViewController" customModule="LinkedIn" customModuleProvider="target">
+            <connections>
+                <outlet property="skillNameTextField" destination="T6q-zx-3TP" id="PeZ-kX-qEW"/>
+                <outlet property="view" destination="12z-x2-tM9" id="6h3-2e-7xq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="12z-x2-tM9">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-Wj-xyT">
+                    <rect key="frame" x="0.0" y="72" width="393" height="400"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1e5-II-Zkp">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="400"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Edit skill" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kpt-bY-4Wb">
+                                    <rect key="frame" x="8" y="56.000000000000007" width="171" height="26.333333333333336"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                    <color key="textColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T6q-zx-3TP">
+                                    <rect key="frame" x="8" y="181.33333333333334" width="377" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skill Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5i7-xz-ju5">
+                                    <rect key="frame" x="8" y="146" width="134" height="20.333333333333343"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <color key="textColor" red="0.66459519030000003" green="0.66459519030000003" blue="0.66459519030000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstItem="T6q-zx-3TP" firstAttribute="leading" secondItem="1e5-II-Zkp" secondAttribute="leading" constant="8" id="BC0-16-7dI"/>
+                                <constraint firstItem="T6q-zx-3TP" firstAttribute="top" secondItem="5i7-xz-ju5" secondAttribute="bottom" constant="15" id="Dlp-VI-oNF"/>
+                                <constraint firstAttribute="trailing" secondItem="T6q-zx-3TP" secondAttribute="trailing" constant="8" id="Qej-gN-4Ij"/>
+                                <constraint firstItem="kpt-bY-4Wb" firstAttribute="top" secondItem="1e5-II-Zkp" secondAttribute="top" constant="56" id="YCh-AE-h6a"/>
+                                <constraint firstItem="5i7-xz-ju5" firstAttribute="leading" secondItem="1e5-II-Zkp" secondAttribute="leading" constant="8" id="cwS-ep-v3u"/>
+                                <constraint firstItem="5i7-xz-ju5" firstAttribute="top" secondItem="kpt-bY-4Wb" secondAttribute="bottom" constant="63.670000000000002" id="pqW-f3-fnj"/>
+                                <constraint firstAttribute="trailing" secondItem="kpt-bY-4Wb" secondAttribute="trailing" constant="214" id="rui-jG-gdE"/>
+                                <constraint firstAttribute="trailing" secondItem="5i7-xz-ju5" secondAttribute="trailing" constant="251" id="vBh-CX-Lc2"/>
+                                <constraint firstItem="kpt-bY-4Wb" firstAttribute="leading" secondItem="1e5-II-Zkp" secondAttribute="leading" constant="8" id="yZx-ip-BiJ"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="400" id="JFs-Of-bRp"/>
+                    </constraints>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O2B-hi-7nm">
+                    <rect key="frame" x="16" y="504.99999999999994" width="361" height="34.333333333333314"/>
+                    <color key="tintColor" red="0.090196078430000007" green="0.1137254902" blue="0.15686274510000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Save">
+                        <backgroundConfiguration key="background" cornerRadius="21">
+                            <color key="backgroundColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <color key="strokeColor" red="0.36862745099999999" green="0.60784313729999995" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </backgroundConfiguration>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="skillSaveButton:" destination="-1" eventType="touchUpInside" id="dfV-lZ-12C"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="lfU-sR-Iag"/>
+            <color key="backgroundColor" red="0.12941176469999999" green="0.16078431369999999" blue="0.2274509804" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="vcz-Wj-xyT" firstAttribute="top" secondItem="12z-x2-tM9" secondAttribute="top" constant="72" id="3Wh-dL-4Xv"/>
+                <constraint firstItem="lfU-sR-Iag" firstAttribute="trailing" secondItem="O2B-hi-7nm" secondAttribute="trailing" constant="16" id="5ZY-Zh-FLv"/>
+                <constraint firstItem="O2B-hi-7nm" firstAttribute="top" secondItem="vcz-Wj-xyT" secondAttribute="bottom" constant="33" id="7eE-Is-nSu"/>
+                <constraint firstItem="O2B-hi-7nm" firstAttribute="leading" secondItem="lfU-sR-Iag" secondAttribute="leading" constant="16" id="86T-cG-6zv"/>
+                <constraint firstItem="vcz-Wj-xyT" firstAttribute="trailing" secondItem="lfU-sR-Iag" secondAttribute="trailing" id="9Dl-nH-5N5"/>
+                <constraint firstItem="O2B-hi-7nm" firstAttribute="bottom" secondItem="lfU-sR-Iag" secondAttribute="bottom" constant="-244.66666666666663" id="HIn-W8-yoF"/>
+                <constraint firstItem="vcz-Wj-xyT" firstAttribute="leading" secondItem="lfU-sR-Iag" secondAttribute="leading" id="Qx0-kD-Esn"/>
+            </constraints>
+            <point key="canvasLocation" x="6.8702290076335872" y="-11.267605633802818"/>
+        </view>
+    </objects>
+</document>

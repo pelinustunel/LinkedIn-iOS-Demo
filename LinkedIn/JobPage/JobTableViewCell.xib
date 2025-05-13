@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobTableViewCell" rowHeight="81" id="L5C-XE-lTq" customClass="JobTableViewCell" customModule="LinkedIn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="L5C-XE-lTq" id="KGF-ZU-MjB">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8E5-JL-Tkh">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQW-ru-ij8">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="job1" translatesAutoresizingMaskIntoConstraints="NO" id="QQ5-AA-EJV">
+                                        <rect key="frame" x="16" y="15" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="aXj-Y2-kmw"/>
+                                            <constraint firstAttribute="width" constant="50" id="dKn-CP-TZk"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="IOS Developer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LV7-ES-UvD">
+                                        <rect key="frame" x="76" y="14" width="281" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="281" id="RVi-EB-7Fi"/>
+                                            <constraint firstAttribute="height" constant="22" id="Ta4-1P-HWc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medibank" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nrc-pg-psV">
+                                        <rect key="frame" x="76" y="36" width="200" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="N9e-Bc-Uze"/>
+                                            <constraint firstAttribute="width" constant="200" id="mm0-0g-fFL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Outlier (Remote)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhD-3n-38k">
+                                        <rect key="frame" x="76" y="58" width="269" height="16"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="269" id="GVb-ZY-GOL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                                        <color key="textColor" red="0.71372549019999998" green="0.71372549019999998" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12905381790000001" green="0.1626097805" blue="0.22713462749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="uhD-3n-38k" firstAttribute="top" secondItem="Nrc-pg-psV" secondAttribute="bottom" id="0Nr-2u-GLL"/>
+                                    <constraint firstItem="LV7-ES-UvD" firstAttribute="leading" secondItem="QQ5-AA-EJV" secondAttribute="trailing" constant="10" id="4lW-Kp-WiN"/>
+                                    <constraint firstAttribute="bottom" secondItem="uhD-3n-38k" secondAttribute="bottom" constant="6" id="IbK-8Y-M88"/>
+                                    <constraint firstItem="LV7-ES-UvD" firstAttribute="top" secondItem="PQW-ru-ij8" secondAttribute="top" constant="14" id="Vvo-0g-f1W"/>
+                                    <constraint firstAttribute="trailing" secondItem="uhD-3n-38k" secondAttribute="trailing" constant="48" id="hDd-TW-8cD"/>
+                                    <constraint firstItem="Nrc-pg-psV" firstAttribute="top" secondItem="LV7-ES-UvD" secondAttribute="bottom" id="lKg-vi-fJm"/>
+                                    <constraint firstItem="Nrc-pg-psV" firstAttribute="leading" secondItem="QQ5-AA-EJV" secondAttribute="trailing" constant="10" id="mXe-G7-EzU"/>
+                                    <constraint firstItem="QQ5-AA-EJV" firstAttribute="top" secondItem="PQW-ru-ij8" secondAttribute="top" constant="15" id="ntr-Lc-VnQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="QQ5-AA-EJV" secondAttribute="bottom" constant="15" id="tT2-pf-8z3"/>
+                                    <constraint firstItem="QQ5-AA-EJV" firstAttribute="leading" secondItem="PQW-ru-ij8" secondAttribute="leading" constant="16" id="uSZ-Vn-6u4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="8E5-JL-Tkh" secondAttribute="bottom" id="OJC-1c-q6R"/>
+                    <constraint firstItem="8E5-JL-Tkh" firstAttribute="top" secondItem="KGF-ZU-MjB" secondAttribute="top" id="RaK-oX-qoo"/>
+                    <constraint firstItem="8E5-JL-Tkh" firstAttribute="leading" secondItem="KGF-ZU-MjB" secondAttribute="leading" id="Vlx-2P-T3T"/>
+                    <constraint firstAttribute="trailing" secondItem="8E5-JL-Tkh" secondAttribute="trailing" id="g5x-bm-xfN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="jobCompanyNameLabel" destination="Nrc-pg-psV" id="Qpe-Db-oKE"/>
+                <outlet property="jobCountryNameLabel" destination="uhD-3n-38k" id="Kbr-LW-32W"/>
+                <outlet property="jobImageView" destination="QQ5-AA-EJV" id="0gf-4Z-XjF"/>
+                <outlet property="jobNameLabel" destination="LV7-ES-UvD" id="NZo-tE-0hr"/>
+            </connections>
+            <point key="canvasLocation" x="93.89312977099236" y="7.042253521126761"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="job1" width="260" height="242"/>
+    </resources>
+</document>
