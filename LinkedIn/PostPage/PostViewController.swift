@@ -8,6 +8,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+import FirebaseCrashlytics
+import Firebase
 
 class PostViewController : UIViewController, UITextViewDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
@@ -83,15 +85,27 @@ class PostViewController : UIViewController, UITextViewDelegate, UIImagePickerCo
     
     @IBAction func postAddClick(_ sender: Any) {
         guard let content = detailTextView.text,
-                   let token = UserDefaults.standard.string(forKey: "userToken") else { return }
+              let token = UserDefaults.standard.string(forKey: "userToken") else {
+            Crashlytics.crashlytics().log("⚠️ Token veya içerik eksik")
+            return
+        }
+        
+        // 📌 Firebase'e log gönder: kullanıcı post atmaya çalışıyor
+        Crashlytics.crashlytics().log("📝 Post ekleniyor: \(content)")
+        
+        // ❗️Opsiyonel: Test için manuel crash örneği
+        // Uncomment edip test edebilirsin
+        // fatalError("🔥 Post eklenirken crash testi")
         
         PostManager.shared.addPost(token: token, content: content, image: postImageView.image) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success:
+                    Crashlytics.crashlytics().log("✅ Post başarıyla eklendi")
+                    
                     NotificationCenter.default.post(name: .postAdded, object: nil)
                     
-                    // ✅ Home tab'a geçiş
+                    // Ana sayfaya dön
                     if let tabBarController = self?.presentingViewController as? UITabBarController {
                         tabBarController.selectedIndex = 0
                     }
@@ -99,6 +113,8 @@ class PostViewController : UIViewController, UITextViewDelegate, UIImagePickerCo
                     self?.dismiss(animated: true)
                     
                 case .failure(let error):
+                    // ❗️Firebase’e hata kaydı
+                    Crashlytics.crashlytics().record(error: error)
                     print("❌ Post eklenemedi: \(error.localizedDescription)")
                 }
             }

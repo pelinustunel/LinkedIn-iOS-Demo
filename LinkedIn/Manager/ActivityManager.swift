@@ -13,7 +13,7 @@ class ActivityManager {
     static let shared = ActivityManager()
     
     func fetchActivities(token: String, completion: @escaping (Result<[ActivityModel], Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/activity/list"
+        let url = "https://pelinustunel.store/profile/activity/list"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)

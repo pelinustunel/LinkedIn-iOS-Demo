@@ -14,7 +14,7 @@ class ExperienceManager {
     static let shared = ExperienceManager()
     
     func fetchExperience(token: String, completion: @escaping (Result<[ExperienceModel], Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/experience/list"
+        let url = "https://pelinustunel.store/profile/experience/list"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)
@@ -30,7 +30,7 @@ class ExperienceManager {
     }
     
     func addExperience(token: String, experiencenData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/experience/add_experience"
+        let url = "https://127.0.0.1:5003/profile/experience/add_experience"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, parameters: experiencenData, encoding: JSONEncoding.default, headers: headers)
@@ -46,7 +46,7 @@ class ExperienceManager {
     }
     
     func updateExperience(token: String, experienceId: Int, updatedData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/experience/update_experience/\(experienceId)"
+        let url = "https://127.0.0.1:5003/profile/experience/update_experience/\(experienceId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .put, parameters: updatedData, encoding: JSONEncoding.default, headers: headers)
@@ -66,7 +66,7 @@ class ExperienceManager {
     }
     
     func deleteExperience(token: String, experienceId: Int, completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/experience/delete_experience/\(experienceId)"
+        let url = "https://127.0.0.1:5003/profile/experience/delete_experience/\(experienceId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .delete, headers: headers)

@@ -136,8 +136,6 @@
 				631FAB002DB1519600CB7A65 /* FullNavigationTest */,
 			);
 			name = FullNavigationTest;
-			packageProductDependencies = (
-			);
 			productName = FullNavigationTest;
 			productReference = 631FAAFF2DB1519600CB7A65 /* FullNavigationTest.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";

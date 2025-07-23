@@ -13,7 +13,7 @@ class ConnectionManager {
     static let shared = ConnectionManager()
     private init() {}
     
-    let baseURL = "http://127.0.0.1:5003"
+    let baseURL = "https://pelinustunel.store"
     
     func fetchConnection(token: String, completion: @escaping (Result<[ConnectionModel], Error>) -> Void) {
         

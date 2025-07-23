@@ -14,7 +14,7 @@ class EducationManager {
     static let shared = EducationManager()
     
     func fetchEducations(token: String, completion: @escaping (Result<[EducationModel], Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/education/list"
+        let url = "https://pelinustunel.store/profile/education/list"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)
@@ -31,7 +31,7 @@ class EducationManager {
     
     
     func addEducation(token: String, educationData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/education/add_education"
+        let url = "https://127.0.0.1:5003/profile/education/add_education"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, parameters: educationData, encoding: JSONEncoding.default, headers: headers)
@@ -47,7 +47,7 @@ class EducationManager {
     }
     
     func updateEducation(token: String, educationId: Int, educationData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/education/update_education/\(educationId)"
+        let url = "https://127.0.0.1:5003/profile/education/update_education/\(educationId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .put, parameters: educationData, encoding: JSONEncoding.default, headers: headers)
@@ -67,7 +67,7 @@ class EducationManager {
     }
     
     func deleteEducation(token: String, educationId: Int, completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/education/delete_education/\(educationId)"
+        let url = "https://127.0.0.1:5003/profile/education/delete_education/\(educationId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .delete, headers: headers)

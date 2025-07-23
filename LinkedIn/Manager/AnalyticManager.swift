@@ -15,7 +15,9 @@ class AnalyticManager {
     
     func fetchAnalytics(token: String, completion: @escaping(Result<[AnalyticModel], Error>) -> Void) {
         
-        let url = "http://127.0.0.1:5003/profile/analytic/list"
+        let url = "https://pelinustunel.store/profile/analytic/list"  // Gerçek sunucu adresinizle değiştirin
+        
+
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)

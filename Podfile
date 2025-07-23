@@ -6,6 +6,8 @@ target 'LinkedIn' do
   use_frameworks!
 
 pod 'lottie-ios', '~> 3.0'
+pod 'Firebase/Crashlytics'
+
 
   # Pods for LinkedIn
 

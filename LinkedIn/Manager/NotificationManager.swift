@@ -13,19 +13,28 @@ class NotificationManager {
     static let shared = NotificationManager()
     private init() {}
     
-    let baseURL = "http://127.0.0.1:5003"
+    let baseURL = "https://pelinustunel.store"
     
     
     func fetchNotifications(token: String, completion: @escaping (Result<[NotificationModel], Error>) -> Void) {
         let url = "\(baseURL)/notification/list"
         
         let headers: HTTPHeaders = [
-            "Authorization": "Bearer \(token)"
+            "Authorization": "Bearer \(token)",
+            "Accept-Encoding": "gzip" // 🔥 Gzip desteği buraya eklendi
         ]
         
         AF.request(url, method: .post, headers: headers)
             .validate()
             .responseDecodable(of: [NotificationModel].self) { response in
+                
+                // 🧩 Header'ı kontrol et
+                if let encoding = response.response?.allHeaderFields["Content-Encoding"] as? String {
+                    print("📦 Sunucu yanıtı Gzip mi? --> \(encoding)") // Burada "gzip" yazmalı
+                } else {
+                    print("📭 Gzip encoding bulunamadı.")
+                }
+                
                 switch response.result {
                 case .success(let notifications):
                     completion(.success(notifications))
@@ -33,7 +42,9 @@ class NotificationManager {
                     completion(.failure(error))
                 }
             }
+        
     }
+    
     
     // Notification Delete
     func deleteNotification(id: Int, token: String, completion: @escaping (Bool) -> Void) {

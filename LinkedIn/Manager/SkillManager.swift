@@ -14,7 +14,7 @@ class SkillManager {
     
     func fetchSkills(token: String, completion: @escaping(Result<[SkillModel], Error>) -> Void) {
         
-        let url = "http://127.0.0.1:5003/profile/skill/list"
+        let url = "https://pelinustunel.store/profile/skill/list"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)
@@ -27,11 +27,10 @@ class SkillManager {
                     completion(.failure(error))
                 }
             }
-        
     }
     
     func addSkill(token: String, skillData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/skill/add_skill"
+        let url = "https://pelinustunel.store/profile/skill/add_skill"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, parameters: skillData, encoding: JSONEncoding.default, headers: headers)
@@ -47,7 +46,7 @@ class SkillManager {
     }
     
     func updateSkill(token: String, skillId: Int, skillData: [String: Any], completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/skill/update_skill/\(skillId)"
+        let url = "https://pelinustunel.store/profile/skill/update_skill/\(skillId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .put, parameters: skillData, encoding: JSONEncoding.default, headers: headers)
@@ -67,7 +66,7 @@ class SkillManager {
     }
     
     func deleteSkill(token: String, skillId: Int, completion: @escaping (Result<Void, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/skill/delete_skill/\(skillId)"
+        let url = "https://pelinustunel.store/profile/skill/delete_skill/\(skillId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .delete, headers: headers)

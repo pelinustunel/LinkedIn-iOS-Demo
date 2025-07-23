@@ -30,8 +30,7 @@ class MessageViewModel {
 
         MessageManager.shared.fetchMessages(token: token, userId: currentUserId) { [weak self] result in
             switch result {
-            case .success(let conversationList):
-                self?.conversations.accept(conversationList) // ✅ Backend zaten doğru veriyi döndürüyor!
+            case .success(let conversationList):// ✅ Backend zaten doğru veriyi döndürüyor!
             case .failure(let error):
                 self?.errorMessage.accept("Mesajlar çekilemedi: \(error.localizedDescription)")
             }

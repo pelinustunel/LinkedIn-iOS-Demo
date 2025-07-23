@@ -15,7 +15,7 @@ class MessageManager {
     
     /// 🔥 Conversation listesi (son mesajlar, kişilerle olan konuşmalar)
     func fetchMessages(token: String, userId: String, completion: @escaping (Result<[ConversationModel], Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/message/list"
+        let url = "https://pelinustunel.store/message/list"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         let parameters: [String: Any] = ["user_id": userId]
 
@@ -33,7 +33,7 @@ class MessageManager {
     
     /// 🟣 Mesaj detayını getirir (tek mesaj)
     func fetchMessageDetail(token: String, messageId: Int, completion: @escaping (Result<MessageModel, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/message/\(messageId)"
+        let url = "https://127.0.0.1:5003/message/\(messageId)"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)
@@ -50,7 +50,7 @@ class MessageManager {
     
     /// 🟢 İki kullanıcı arasındaki tüm sohbet geçmişini getirir
     func fetchChatHistory(token: String, currentUserId: String, otherUserId: String, completion: @escaping (Result<[MessageModel], Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/message/detail"
+        let url = "https://127.0.0.1:5003/message/detail"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         let parameters: [String: Any] = [
             "current_user_id": currentUserId,

@@ -25,10 +25,12 @@ class NotificationViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         viewModel.fetchNotifications()
         setupTableView()
         bindTableView()
         bindErrorHandling()
+        
         
     }
     

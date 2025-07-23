@@ -13,7 +13,7 @@ class ProfileManager {
     static let shared = ProfileManager()
     
     func fetchProfile(token: String, completion: @escaping (Result< ProfileModel, Error>) -> Void) {
-        let url = "http://127.0.0.1:5003/profile/user"
+        let url = "https://pelinustunel.store/profile/user"
         let headers: HTTPHeaders = ["Authorization": "Bearer \(token)"]
         
         AF.request(url, method: .post, headers: headers)

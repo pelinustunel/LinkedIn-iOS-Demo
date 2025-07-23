@@ -59,38 +59,22 @@ class SignInViewController : UIViewController {
             .bind { [weak self] in
                 guard let self = self else { return }
                 
-                let username = self.emailTextField.text ?? ""
-                let password = self.passwordTextField.text ?? ""
-
-                NetworkManager.shared.login(username: username, password: password) { result in
-                    DispatchQueue.main.async {
-                        switch result {
-                        case .success(let loginResponse):
-                            if let token = loginResponse.token {
-                                // ✅ Token varsa kaydet
-                                UserDefaults.standard.set(token, forKey: "userToken")
-                                UserDefaults.standard.set(loginResponse.user_id, forKey: "userId")
-                                print("Token: \(token), User ID: \(loginResponse.user_id)")
-                                
-                                let mainTabbarController = MainTabBarController()
-                                if let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate {
-                                    sceneDelegate.window?.rootViewController = mainTabbarController
-                                }
-                            } else if let errorMessage = loginResponse.error {
-                                // ❌ Eğer token yoksa ve error geldiyse
-                                self.showAlert(message: errorMessage)
-                            } else {
-                                // ⚠️ Ne token var ne error → beklenmeyen durum
-                                self.showAlert(message: "Bilinmeyen bir hata oluştu.")
-                            }
-                            
-                        case .failure(let error):
-                            self.showAlert(message: error.localizedDescription)
-                        }
+               // let username = self.emailTextField.text ?? ""
+               // let password = self.passwordTextField.text ?? ""
+                
+                PipedreamAPIManager.shared.makeRequest { result in
+                    switch result {
+                    case .success(let data):
+                        print(data)
+                    case .failure(let error):
+                        print(error)
                     }
                 }
+                
+              
             }
             .disposed(by: disposeBag)
+
 
     }
     

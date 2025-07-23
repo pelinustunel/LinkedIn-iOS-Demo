@@ -83,13 +83,13 @@ class MessageViewController : UIViewController {
             }
             .disposed(by: disposeBag)
         
-        // ✅ Seçilen sohbeti detay sayfasına gönderme
+
         messageTableView.rx.modelSelected(ConversationModel.self)
             .subscribe(onNext: { [weak self] selectedConversation in
                 guard let self = self else { return }
                 let messageDetailVC = MessageDetailViewController(nibName: "MessageDetailView", bundle: nil)
                 
-                messageDetailVC.otherUserId = selectedConversation.other_user_id  // Burada ConversationModel'dan diğer kişinin ID'si
+                messageDetailVC.otherUserId = selectedConversation.other_user_id
                 if let sheet = messageDetailVC.sheetPresentationController {
                     sheet.detents = [.medium(), .large()]
                     sheet.prefersGrabberVisible = true

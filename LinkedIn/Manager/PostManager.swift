@@ -14,7 +14,7 @@ class PostManager {
     static let shared = PostManager()
     private init() {}
     
-    let baseURL = "http://127.0.0.1:5003"
+    let baseURL = "https://pelinustunel.store"
     
     func fetchPosts(token: String, completion: @escaping (Result<[PostModel], Error>) -> Void) {
         let url = "\(baseURL)/post/list"

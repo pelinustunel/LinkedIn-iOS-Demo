@@ -13,7 +13,7 @@ class JobManager {
     static let shared = JobManager()
     private init() {}
     
-    let baseURL = "http://127.0.0.1:5003"
+    let baseURL = "https://pelinustunel.store"
     
     func fetchJob(token: String, completion: @escaping (Result<[JobModel], Error>) -> Void) {
         

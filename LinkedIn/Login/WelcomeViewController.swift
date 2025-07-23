@@ -7,6 +7,8 @@
 
 import UIKit
 
+
+
 struct Page {
     let animationName: String
     let description: String
@@ -31,6 +33,7 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource, UICol
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         signInButton.accessibilityIdentifier = "WelcomeSignIn"
         
         self.pageControl.numberOfPages = self.pages.count
@@ -40,6 +43,7 @@ class WelcomeViewController: UIViewController, UICollectionViewDataSource, UICol
         
         timer = Timer.scheduledTimer(timeInterval: 3.0, target: self, selector: #selector(changePage), userInfo: nil, repeats: true)
         collectionView.register(UINib(nibName: PageCellViewController.cellIdentifier, bundle: nil), forCellWithReuseIdentifier: PageCellViewController.cellIdentifier)
+        
         
         
     }

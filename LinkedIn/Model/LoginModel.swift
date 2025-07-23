@@ -14,7 +14,13 @@ struct LoginRequest: Encodable {
 struct LoginResponse: Decodable {
     let message: String
     let token: String?
+    let refresh_token: String?
     let user_id: String
     let error: String?
+}
+
+// Yeni token cevabı modeli
+struct TokenResponse: Decodable {
+    let token: String
 }
 
